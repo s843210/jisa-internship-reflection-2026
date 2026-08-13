@@ -41,7 +41,9 @@ const assetNames = [
 ];
 
 function rewritePaths(source) {
-  let result = source.replaceAll("/assets/", `${base}/assets/`);
+  let result = source
+    .replaceAll("/assets/", `${base}/assets/`)
+    .replaceAll('function(e){return`/`+e}', `function(e){return\`${base}/\`+e}`);
   for (const asset of assetNames) result = result.replaceAll(`/${asset}`, `${base}/${asset}`);
   return result
     .replaceAll("http://localhost:3004/og.png", `${siteUrl}/og.png`)
