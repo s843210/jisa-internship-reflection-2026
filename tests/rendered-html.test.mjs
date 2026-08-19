@@ -16,21 +16,21 @@ async function render() {
   );
 }
 
-test("server-renders the Korean internship reflection report", async () => {
+test("server-renders the Japanese internship reflection report by default", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
-  assert.match(html, /일본에서 일하고,/);
-  assert.match(html, /낯선 회의실에서 시작된 첫날/);
-  assert.match(html, /학교에서 배운 것/);
-  assert.match(html, /가지고 있던 기술과 실제로 할 수 있는 일/);
+  assert.match(html, /日本で働き、暮らし、/);
+  assert.match(html, /慣れない会議室から始まった初日/);
+  assert.match(html, /大学で学んだこと/);
+  assert.match(html, /身につけていた技術と、実際にできること/);
   assert.match(html, /React 19/);
-  assert.match(html, /일본어 주간 회의, 피드백 확인 및 현장 발표 경험/);
-  assert.match(html, /실력보다 먼저 달라진 것은 태도였다/);
+  assert.match(html, /日本語での週次会議、フィードバック確認、現場発表を経験/);
+  assert.match(html, /能力より先に変わったのは、仕事への姿勢だった/);
   assert.match(html, /US Medical Inc\./);
-  assert.match(html, /JISA 인턴십 프로그램/);
+  assert.match(html, /JISAインターンシッププログラム/);
   assert.match(html, /usmedical-presentation\.mp4/);
   assert.match(html, /japanese-presentation\.mp4/);
   assert.doesNotMatch(html, /실습 요약|개의 완성 성과물|codex-preview|Building your site/);
@@ -52,7 +52,9 @@ test("includes bilingual content, media, and removes the disposable preview", as
   assert.match(page, /team-dinner\.jpg/);
   assert.match(page, /meeting\.jpg/);
   assert.match(page, /controls playsInline preload="metadata"/);
-  assert.match(layout, /lang="ko"/);
+  assert.match(page, /useState<Language>\("ja"\)/);
+  assert.match(layout, /lang="ja"/);
+  assert.match(layout, /locale: "ja_JP"/);
   assert.match(css, /grid-template-columns:\s*180px minmax\(0, 1fr\)/);
   assert.match(css, /html\[lang="ja"\] body/);
   assert.match(css, /\.cover-photo/);

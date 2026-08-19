@@ -356,7 +356,7 @@ const copy = {
 } as const;
 
 export default function Home() {
-  const [language, setLanguage] = useState<Language>("ko");
+  const [language, setLanguage] = useState<Language>("ja");
   const t = copy[language];
 
   useEffect(() => {

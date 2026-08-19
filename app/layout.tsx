@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const title = "일본에서 일하고, 생활하고, 성장한 8주의 기록";
-const description = "임보현의 JISA·US Medical 일본 인턴십 활동 기록과 체험 보고서";
+const title = "日本で働き、暮らし、成長した8週間の記録";
+const description = "イム・ボヒョンのJISA・US Medical日本インターンシップ体験記録";
 
 export async function generateMetadata(): Promise<Metadata> {
   const requestHeaders = await headers();
@@ -30,7 +30,7 @@ export async function generateMetadata(): Promise<Metadata> {
       title,
       description,
       type: "website",
-      locale: "ko_KR",
+      locale: "ja_JP",
       images: [{ url: image, width: 1731, height: 909, alt: title }],
     },
     twitter: { card: "summary_large_image", title, description, images: [image] },
@@ -39,7 +39,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="ko">
+    <html lang="ja">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>{children}</body>
     </html>
   );
