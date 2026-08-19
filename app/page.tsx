@@ -34,14 +34,40 @@ const copy = {
       number: "02",
       kicker: "기본 프로필",
       title: "실습을 시작할 때의 나",
-      intro: "학교에서 익힌 웹 개발과 UI/UX 지식을 실제 제품과 서비스에 적용해 보았다. 영상, 웹, 운영 화면, 패키지를 따로 보지 않고 하나의 사용자 경험으로 이어 보는 일이었다.",
+      intro: "컴퓨터공학과에서 익힌 웹 개발과 UI/UX 지식을 실제 제품과 서비스에 적용해 보았다. 수업에서 배운 개념이 회사에서는 어떤 기준으로 쓰이는지 확인하고, 부족한 부분은 직접 부딪치며 채워 간 시간이었다.",
       rows: [
         ["대학 · 학과", "조선대학교 컴퓨터공학과"],
+        ["인턴십 기간", "2026년 6월 30일 — 8월 29일 · 여름 8주간"],
         ["실습 기업", "US Medical Inc. (도쿄)"],
         ["담당 브랜드", "구강 케어 브랜드 포케덴 POKEDEN"],
-        ["담당 분야", "광고 영상 · 홈페이지 영상 적용 · 인터랙션 · 관리자 화면 · 패키지 디자인"],
-        ["사용 기술", "웹 개발 · UI/UX 디자인 · 영상 편집 · AI 이미지 제작"],
+        ["배치 · 담당 분야", "광고 영상 · 홈페이지 영상 적용 · 인터랙션 · 관리자 화면 · 패키지 디자인"],
+        ["일본어 능력", "일상 회화 수준 · 일본어 주간 회의, 피드백 확인 및 현장 발표 경험"],
         ["주최 · 지원", "대학 SW 중심사업단 · JISA 일본 인턴십 지원협회"],
+      ],
+      educationTitle: "학교에서 배운 것",
+      educationBody: "컴퓨터공학 전공 수업과 프로젝트를 통해 HTML·CSS·JavaScript로 웹 화면을 구성하는 법, React와 TypeScript로 기능을 컴포넌트 단위로 나누는 법, 사용자가 정보를 이해하기 쉬운 순서로 정리하는 UI/UX의 기본을 배웠다. 이번 실습에서는 그 지식을 실제 브랜드 홈페이지와 운영 화면에 연결했다.",
+      skillsTitle: "가지고 있던 기술과 실제로 할 수 있는 일",
+      skills: [
+        {
+          name: "프론트엔드 개발",
+          tools: "HTML · CSS · JavaScript · React 19 · TypeScript · Tailwind CSS v4 · Vite",
+          body: "반응형 웹 화면을 만들고, 영상 재생·정지와 호버 인터랙션 같은 동작을 구현할 수 있다. PC와 모바일에서 화면이 잘리지 않는지 확인하고 오류를 수정하는 작업도 수행했다.",
+        },
+        {
+          name: "UI/UX · 운영 화면",
+          tools: "정보 구조 · 반응형 UI · 관리자 화면 · 대시보드",
+          body: "처음 사용하는 사람도 기능을 찾을 수 있도록 정보의 순서와 버튼 위치를 정리할 수 있다. 담당자가 개발자 없이 콘텐츠와 문의 현황을 관리하는 화면을 설계했다.",
+        },
+        {
+          name: "영상 · 시각 콘텐츠",
+          tools: "영상 기획 · 자막 · 편집 · AI 이미지·영상 제작 · 패키지 콘셉트",
+          body: "제품이 쓰이는 상황을 이야기로 구성하고, 장면 소재와 자막을 만들어 한 편의 광고 영상으로 편집할 수 있다. 대상에 맞춰 영상과 패키지의 색, 문구, 분위기를 조정하는 작업도 경험했다.",
+        },
+        {
+          name: "테스트 · 문제 해결",
+          tools: "기기별 확인 · 재생 오류 디버깅 · 피드백 반영",
+          body: "기능이 예상대로 작동하지 않을 때 조건을 나누어 원인을 찾고 수정할 수 있다. 완성 뒤에도 실제 사용 환경에서 다시 확인하고, 회의 피드백을 다음 버전에 반영하는 방식으로 작업했다.",
+        },
       ],
     },
     work: {
@@ -159,7 +185,7 @@ const copy = {
     skip: "本文へ移動",
     nav: ["はじめに", "プロフィール", "仕事で学んだこと", "現場の記録", "日本での生活", "振り返り", "感謝"],
     eyebrow: "JISA INTERNSHIP · FIELD NOTES 2026",
-    title: "日本で働き、\n暮らし、成長した\n8週間の記録",
+    title: "日本で働き、暮らし、\nそして成長した\n8週間の記録",
     dek: "東京の企業で初めて働き、慣れない言葉で意見を交わし、一人で生活しながら学んだことを、そのまま記録しました。",
     meta: [
       ["実習生", "イム・ボヒョン · 朝鮮大学校 コンピュータ工学科"],
@@ -182,14 +208,40 @@ const copy = {
       number: "02",
       kicker: "基本プロフィール",
       title: "実習を始めた時の自分",
-      intro: "大学で学んだウェブ開発とUI/UXの知識を、実際の製品とサービスに応用した。動画、ウェブ、運用画面、パッケージを別々に捉えず、一つの体験としてつなぐ仕事だった。",
+      intro: "コンピュータ工学科で学んだWeb開発とUI/UXの知識を、実際の製品とサービスに応用した。授業で学んだ考え方が企業ではどのような基準で使われるのかを確かめ、不足している部分は実務の中で補っていった。",
       rows: [
         ["大学・学科", "朝鮮大学校 コンピュータ工学科"],
+        ["実習期間", "2026年6月30日 — 8月29日・夏季8週間"],
         ["実習企業", "US Medical Inc.（東京）"],
         ["担当ブランド", "口腔ケアブランド ポケデン POKEDEN"],
-        ["担当分野", "広告動画・サイトへの動画掲載・インタラクション・管理画面・パッケージ"],
-        ["使用した技術", "ウェブ開発・UI/UXデザイン・動画編集・AI画像制作"],
+        ["配属・担当分野", "広告動画・サイトへの動画掲載・インタラクション・管理画面・パッケージ"],
+        ["日本語能力", "日常会話レベル・日本語での週次会議、フィードバック確認、現場発表を経験"],
         ["主催・支援", "大学SW中心事業団・JISA日本インターンシップ支援協会"],
+      ],
+      educationTitle: "大学で学んだこと",
+      educationBody: "コンピュータ工学の授業とプロジェクトを通して、HTML・CSS・JavaScriptによるWeb画面の構築、ReactとTypeScriptによるコンポーネント単位の機能開発、利用者が情報を理解しやすい順序に整理するUI/UXの基礎を学んだ。今回の実習では、その知識を実際のブランドサイトと運用画面へつなげた。",
+      skillsTitle: "身につけていた技術と、実際にできること",
+      skills: [
+        {
+          name: "フロントエンド開発",
+          tools: "HTML・CSS・JavaScript・React 19・TypeScript・Tailwind CSS v4・Vite",
+          body: "レスポンシブなWeb画面を制作し、動画の再生・停止やホバーインタラクションを実装できる。PCとスマートフォンで表示が崩れないかを確認し、不具合を修正する作業も行った。",
+        },
+        {
+          name: "UI/UX・運用画面",
+          tools: "情報設計・レスポンシブUI・管理画面・ダッシュボード",
+          body: "初めて使う人でも機能を見つけられるよう、情報の順序とボタンの配置を整理できる。担当者が開発者を介さずにコンテンツや問い合わせ状況を管理できる画面を設計した。",
+        },
+        {
+          name: "動画・ビジュアルコンテンツ",
+          tools: "動画企画・字幕・編集・AI画像／動画制作・パッケージ企画",
+          body: "製品が使われる場面を物語として構成し、素材と字幕を作り、一本の広告動画に編集できる。対象に合わせて動画とパッケージの色、文言、雰囲気を調整する作業も経験した。",
+        },
+        {
+          name: "テスト・問題解決",
+          tools: "端末別確認・再生不具合のデバッグ・フィードバック反映",
+          body: "機能が想定どおりに動かない時は、条件を分けて原因を探し、修正できる。完成後も実際の利用環境で確認し、会議で得たフィードバックを次の版へ反映する方法で仕事を進めた。",
+        },
       ],
     },
     work: {
@@ -359,7 +411,10 @@ export default function Home() {
       </header>
 
       <div id="content">
-        <section className="cover" aria-labelledby="cover-title">
+        <section className={`cover cover-${language}`} aria-labelledby="cover-title">
+          <div className="cover-photo">
+            <img src="/meeting.jpg" alt={t.coverCaption} />
+          </div>
           <div className="cover-copy">
             <p className="eyebrow">{t.eyebrow}</p>
             <h1 id="cover-title">
@@ -371,11 +426,8 @@ export default function Home() {
                 <div key={label}><dt>{label}</dt><dd>{value}</dd></div>
               ))}
             </dl>
+            <p className="cover-caption"><span>FIG. 01</span>{t.coverCaption}</p>
           </div>
-          <figure className="cover-figure">
-            <img src="/meeting.jpg" alt={t.coverCaption} />
-            <figcaption><span>FIG. 01</span>{t.coverCaption}</figcaption>
-          </figure>
         </section>
 
         <article className="report">
@@ -398,6 +450,25 @@ export default function Home() {
                   <div key={label}><dt>{label}</dt><dd>{value}</dd></div>
                 ))}
               </dl>
+              <div className="education-note">
+                <p className="profile-subtitle">{t.profile.educationTitle}</p>
+                <p>{t.profile.educationBody}</p>
+              </div>
+              <div className="skill-record">
+                <p className="profile-subtitle">{t.profile.skillsTitle}</p>
+                <div className="skill-list">
+                  {t.profile.skills.map((skill, index) => (
+                    <section key={skill.name}>
+                      <span>{String(index + 1).padStart(2, "0")}</span>
+                      <div>
+                        <h3>{skill.name}</h3>
+                        <p className="skill-tools">{skill.tools}</p>
+                        <p>{skill.body}</p>
+                      </div>
+                    </section>
+                  ))}
+                </div>
+              </div>
             </div>
           </section>
 
